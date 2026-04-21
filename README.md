@@ -2,6 +2,9 @@
 
 A Next.js demo of [Incremental Static Regeneration](https://nextjs.org/docs/app/guides/incremental-static-regeneration) with [Cache Components](https://nextjs.org/docs/app/api-reference/config/next-config-js/cacheComponents) and `experimental.partialFallbacks`.
 
+- **Live demo**: https://partial-fallbacks.labs.vercel.dev/
+- **Guide**: [ISR with Cache Components](https://nextjs.org/docs/app/guides/incremental-static-regeneration-cache-components)
+
 ## What it demonstrates
 
 A small product catalog that shows:

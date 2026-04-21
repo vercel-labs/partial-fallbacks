@@ -3,7 +3,7 @@ import Link from "next/link";
 import { fetchProducts, getProducts, type Product } from "../lib/data";
 
 export default function CategoryPage(props: PageProps<"/[category]">) {
-  // Kick off the uncached fetch at the top so it runs in parallel with rendering.
+  // Kick off the uncached fetch at the top so the network round trip happens while rendering completes.
   const liveData = props.params.then(async (p) => ({
     category: p.category,
     products: await fetchProducts(p.category),

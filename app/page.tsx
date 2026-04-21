@@ -34,6 +34,28 @@ export default function Home() {
           <SuffixedCategories />
         </Suspense>
       </section>
+
+      <footer className="mt-16 flex flex-col gap-1 border-t border-zinc-200 pt-6 text-xs text-zinc-500 dark:border-zinc-800">
+        <p>
+          This demo explains{" "}
+          <a
+            href="https://nextjs.org/docs/app/guides/incremental-static-regeneration-cache-components"
+            className="underline hover:text-zinc-700 dark:hover:text-zinc-300"
+          >
+            ISR with Cache Components
+          </a>
+          .
+        </p>
+        <p>
+          Source:{" "}
+          <a
+            href="https://github.com/vercel-labs/partial-fallbacks"
+            className="underline hover:text-zinc-700 dark:hover:text-zinc-300"
+          >
+            github.com/vercel-labs/partial-fallbacks
+          </a>
+        </p>
+      </footer>
     </div>
   );
 }
